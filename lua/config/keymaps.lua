@@ -13,6 +13,9 @@ keymap.set("t", "<esc>", "<C-\\><C-n>")
 keymap.set("n", "<C-t>", ":10split<return>:term<return>i")
 keymap.set("i", "<C-t>", "<esc>:15split<return>:term<return>i")
 
+keymap.set("i", "<C-z>", "<esc>:undo<return>i")
+keymap.set("n", "<C-z>", ":undo<return>")
+
 -- Navigations
 keymap.set("n", "<home>", "_")
 keymap.set("n", "<end>", "g$")
