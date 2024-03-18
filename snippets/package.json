@@ -1,15 +1,19 @@
 {
-    "name": "user-snippets",
-    "contributes": {
-        "snippets": [
-            {
-                "language": "cpp",
-                "path": "./cpp.json"
-            },
-            {
-                "language": "lua",
-                "path": "./lua.json"
-            }
-        ]
-    }
+  "name": "user-snippets",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "cpp",
+        "path": "./cpp.json"
+      },
+      {
+        "language": "html",
+        "path": "./html.json"
+      },
+      {
+        "language": "lua",
+        "path": "./lua.json"
+      }
+    ]
+  }
 }
