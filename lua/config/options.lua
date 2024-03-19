@@ -8,5 +8,3 @@ opt.relativenumber = false
 opt.number = true
 opt.ve = "onemore"
 opt.scrolloff = 9999
-
-opt.shiftwidth = 4
