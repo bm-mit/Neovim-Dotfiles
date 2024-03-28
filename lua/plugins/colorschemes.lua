@@ -11,8 +11,5 @@ return {
   },
   {
     "sainnhe/edge",
-    opts = function()
-      return { edge_transparent_background = "transparent" }
-    end,
   },
 }

@@ -8,6 +8,7 @@ opt.relativenumber = false
 opt.number = true
 opt.ve = "onemore"
 opt.scrolloff = 9999
+opt.cursorline = false
 
 local api = vim.api
 api.nvim_set_var("edge_transparent_background", 1)

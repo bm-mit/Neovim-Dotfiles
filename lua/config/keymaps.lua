@@ -8,6 +8,20 @@ local opts = { noremap = true, silent = true }
 -- Modes
 keymap.set("n", "vb", "<C-v>")
 
+-- Do things without affecting the registers
+keymap.set("n", "x", '"_x')
+keymap.set("n", "<Leader>p", '"0p')
+keymap.set("n", "<Leader>P", '"0P')
+keymap.set("v", "<Leader>p", '"0p')
+keymap.set("n", "<Leader>c", '"_c')
+keymap.set("n", "<Leader>C", '"_C')
+keymap.set("v", "<Leader>c", '"_c')
+keymap.set("v", "<Leader>C", '"_C')
+keymap.set("n", "<Leader>d", '"_d')
+keymap.set("n", "<Leader>D", '"_D')
+keymap.set("v", "<Leader>d", '"_d')
+keymap.set("v", "<Leader>D", '"_D')
+
 -- Increments/Decrements
 keymap.set("n", "+", "<C-a>")
 keymap.set("n", "-", "<C-x>")
@@ -18,6 +32,7 @@ keymap.set("t", "<esc>", "<C-\\><C-n>")
 keymap.set("n", "<C-t>", ":10split<return>:term<return>i", opts)
 keymap.set("i", "<C-t>", "<esc>:15split<return>:term<return>i", opts)
 
+-- Undo
 keymap.set("i", "<C-z>", "<esc>:undo<return>i", opts)
 keymap.set("n", "<C-z>", ":undo<return>", opts)
 
@@ -51,7 +66,7 @@ keymap.set("i", "<C-a>", "<esc>gg<S-v>G")
 
 -- Delete a word
 keymap.set("i", "<C-bs>", "<C-w>")
-keymap.set("i", "<C-del>", "<esc>dei")
+keymap.set("i", "<C-del>", "<esc>ldw", opts)
 
 -- Jumplist
 keymap.set("n", "<C-m>", "<C-i>", opts)
@@ -81,3 +96,8 @@ keymap.set("v", "<C-,>", "<")
 -- Newline at EOL
 keymap.set("n", "<C-Enter>", "o<esc>")
 keymap.set("i", "<C-Enter>", "<esc>o")
+
+-- Diagnostics
+keymap.set("n", "<C-j>", function()
+  vim.diagnostic.goto_next()
+end, opts)
