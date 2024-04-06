@@ -1,5 +1,11 @@
 return {
   {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      window = { position = "current" },
+    },
+  },
+  {
     enabled = false,
     "folke/flash.nvim",
     ---@type Flash.Config
