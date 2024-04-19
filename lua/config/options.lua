@@ -4,7 +4,6 @@
 
 local opt = vim.opt
 
-opt.relativenumber = false
 opt.number = true
 opt.ve = "onemore"
 opt.scrolloff = 9999

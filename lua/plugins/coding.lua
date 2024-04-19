@@ -44,6 +44,16 @@ return {
           "markdown",
           "cpp",
           "go",
+          "lua",
+        },
+        incremental_selection = {
+          enable = true,
+          keymaps = {
+            init_selection = "0",
+            node_incremental = "0",
+            scope_incremental = false,
+            node_decremental = "9",
+          },
         },
       })
     end,

@@ -92,8 +92,3 @@ keymap.set("v", "<C-,>", "<")
 -- Newline at EOL
 keymap.set("n", "<C-Enter>", "o<esc>")
 keymap.set("i", "<C-Enter>", "<esc>o")
-
--- Diagnostics
-keymap.set("n", "<C-j>", function()
-  vim.diagnostic.goto_next()
-end, opts)
