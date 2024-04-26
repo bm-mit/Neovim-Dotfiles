@@ -1,5 +1,21 @@
 return {
   {
+    "meatballs/notebook.nvim",
+    opts = {
+      insert_blank_line = true,
+      show_index = true,
+      show_cell_type = true,
+      virtual_text_style = { fg = "lightblue", italic = true },
+    },
+  },
+  {
+    "meatballs/magma-nvim",
+    init = function()
+      -- these are examples, not defaults. Please see the readme
+      vim.g.molten_output_win_max_height = 20
+    end,
+  },
+  {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
       window = { position = "current" },
